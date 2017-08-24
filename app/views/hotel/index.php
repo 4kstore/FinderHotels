@@ -1,0 +1,1 @@
+hello <?= $hotel->id ?> 
