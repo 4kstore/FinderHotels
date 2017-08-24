@@ -1,0 +1,18 @@
+ @media only screen and (min-width : 992px) {
+	.login-container{
+	    height: 80vh;
+	}
+	.login-form {
+	    width: 500px;
+	}
+	.input-field input {
+	    font-size: 2rem;
+	    height: 3rem;
+	    margin-bottom: 1rem;
+	}
+	.actions button {
+	    font-size: 2rem;
+	    height: 3rem;
+	   	margin-bottom: 3rem;
+	}
+}

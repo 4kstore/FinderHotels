@@ -1,7 +1,8 @@
 <?php
-	namespace Models;
+	namespace models;
 
-	class Hotel{
+	class Hotel
+	{
 		public $id;
 		public $name;
 		public $location;
@@ -9,19 +10,21 @@
 		public $image;
 		public $star_rating;
 
-		public function __construct()
+		public function filterSearch($object, $search)
 		{
-			$this->id = 10;
-		}
+			$filtered = array_filter($object, function($object) use ($search) {
 
-		public static function mostrar($mensaje)
-		{
-			echo 'La persona esta diciendo: '. $mensaje;
-		}
+	           	if (stripos($object->name, $search) !== false)
+		           	return true;
+	           	if (stripos($object->location->city, $search) !== false)
+		           	return true;
+	           	if (stripos($object->description, $search) !== false)
+		           	return true;
 
-		public function listar()
-		{
+			    return false;
+			});
 
+			return $filtered;
 		}
 	}
 

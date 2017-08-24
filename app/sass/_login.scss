@@ -1,0 +1,112 @@
+body {
+	background-color: $bg-color;
+	color: $white;
+	font-family: $roboto;
+	font-size: 16px;
+}
+h1 {
+	font-size: 4rem;
+	font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+p.invalid{
+    background-color: #e74c3c;
+    height: 2rem;
+    line-height: 2rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-container{
+    align-items: center;
+	display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-form {
+	border: 1px solid $grey;
+	padding: 2rem;
+    width: 80%;
+    h1 {
+    	margin-bottom: 2rem;
+    }
+}
+.input-field input,
+.input-field select {
+	display: block;
+	width: 100%;
+	border:none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 100;
+    font-size: 3rem;
+    height: 5rem;
+    color: $grey;
+    border-bottom: 1px solid $white;
+    margin-bottom: 3rem;
+    &::-webkit-input-placeholder {
+        text-transform: uppercase;
+    	color: $white;
+    }
+    &:-moz-placeholder {
+        text-transform: uppercase;
+    	color: $white;
+    }
+    &::-moz-placeholder {
+        text-transform: uppercase;
+    	color: $white;
+    }
+    &:-ms-input-placeholder {
+    	color: $white;
+        text-transform: uppercase;
+    }
+}
+.actions button {
+    background-color: $grey;
+    border: 1px solid $white;
+	color: $bg-color;
+    font-size: 3rem;
+    font-weight: 300;
+    height: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    transition: all .3s ease-out;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-appearance: none;
+    &:hover {
+        background-color: $grey;
+        border: 1px solid $grey;
+    	color: $white;
+        cursor: pointer;
+    }
+}
+.select2-container{
+    font-size: 2rem;
+    height: 2.5rem;
+    text-transform: uppercase;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0;
+}
+.select2-container--open .select2-dropdown--below{
+    background-color: $bg-color;
+}
+
+.select2-container--default .select2-selection--single{
+    border: none;
+    border-bottom: 1px solid $white;
+    border-radius: unset;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    background-color: $bg-color;
+    color: $white;
+}
+.select2-container--default .select2-results__option[aria-selected=true]{
+    background-color: #929ea9;
+}

@@ -1,1 +1,3 @@
-$('select').select2();
+if ($('select').length){
+	$('select').select2();
+}
