@@ -1,6 +1,6 @@
 <?php
 	return  [
-		'url' => 'http://localhost/finderhoteles/public',
+		'url' => 'http://localhost/FinderHotels/public',
 		'endpoints' => [
 			'hotels' => 'https://us-central1-id90travel-be846.cloudfunctions.net/hotels',
 			'airlines' => 'https://us-central1-id90travel-be846.cloudfunctions.net/airlines',

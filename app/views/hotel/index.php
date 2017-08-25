@@ -31,7 +31,7 @@
 						<i class="glyphicon glyphicon-star" aria-hidden="true"></i>
 						<?php } ?>
 					</div>
-					<?
+					<?php
 						if (strlen(strip_tags($h->description, '<p>')) > 200) {
 						   $h->description = substr($h->description, 0, 200) . "...";
 						}

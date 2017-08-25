@@ -56,7 +56,8 @@ class Login extends Controller
 		        'user' => $model->user,
 		        'pass' => $model->pass,
 		        'airline' => $model->airline
-		    ]
+		    ],
+		   	'verify' => false
 		]);
 
 		if ($response->getStatusCode() === 200)
