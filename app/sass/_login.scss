@@ -46,24 +46,20 @@ p.invalid{
     font-weight: 100;
     font-size: 3rem;
     height: 5rem;
-    color: $grey;
+    color: $white;
     border-bottom: 1px solid $white;
     margin-bottom: 3rem;
     &::-webkit-input-placeholder {
-        text-transform: uppercase;
     	color: $white;
     }
     &:-moz-placeholder {
-        text-transform: uppercase;
     	color: $white;
     }
     &::-moz-placeholder {
-        text-transform: uppercase;
     	color: $white;
     }
     &:-ms-input-placeholder {
     	color: $white;
-        text-transform: uppercase;
     }
 }
 .actions button {
@@ -89,7 +85,9 @@ p.invalid{
 .select2-container{
     font-size: 2rem;
     height: 2.5rem;
-    text-transform: uppercase;
+    width: 100% !important;
+    margin-top: 0.8rem;
+    margin-bottom: .5rem;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
     padding: 0;
@@ -106,7 +104,12 @@ p.invalid{
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     background-color: $bg-color;
     color: $white;
+    font-size: 2rem;
 }
 .select2-container--default .select2-results__option[aria-selected=true]{
     background-color: #929ea9;
+    font-size: 1rem;
+}
+.select2-results__option{
+    font-size: 1rem;
 }

@@ -7,7 +7,6 @@
 		public $pass;
 		public $airline;
 
-
 		public function saveSessionToken($token)
 		{
 			session_start();
@@ -20,5 +19,4 @@
 			return !empty($_SESSION['user_token']) ? true : false;
 		}
 	}
-
 ?>

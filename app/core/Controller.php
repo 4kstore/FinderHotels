@@ -1,6 +1,14 @@
 <?php
-
+use core\SimpleConfig;
 class Controller {
+
+	public $config;
+
+	public function __construct()
+	{
+		//We need the configs settings for the controllers
+		$this->config = SimpleConfig::getInstance();
+	}
 
 	public function model($model)
 	{

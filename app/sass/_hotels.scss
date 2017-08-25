@@ -1,18 +1,17 @@
 .hotels {
-	h1{
-		font-size: 6rem;
-	    margin: 3rem 0 1rem 0;
+	h1 {
+		font-size: 4rem;
+	    margin: 2rem 0 0 0;
 	}
 	input {
 		width: 80%;
 		margin: 2rem auto;
 		background: transparent;
 		color: #FFF;
-		font-size: 4rem;
+		font-size: 1.5rem;
 		border: 0;
 		border-bottom: 1px solid white;
 		display: block;
-		margin-bottom: 6rem;
 		transition: all 1s ease-out;
 		&:focus {
 			border-bottom: 1px solid #2ecc71;
@@ -22,19 +21,59 @@
 		font-size: 2rem;
 	}
 	p.search-for{
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: #e67e22;
 		font-weight: 300;
-		span {
-			color: #e74c3c;
-			font-weight: 400;
-		}
+		margin-left: 0.5rem;
+	    margin-bottom: 1rem;
 	}
-	.hotel-card {
-		margin: 2rem 0;
-		img {
-			max-height: 200px;
-			max-width: 200px;
+	h2.no-results {
+		font-size: 2rem;
+	}
+	.hotels-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			background-color: $grey;
+			box-shadow: 0 0 5px rgb(51, 51, 51);
+			box-shadow: 0 0 5px rgba(51, 51, 51, 0.7);
+			padding: 0;
+			margin: 0 0 1.25rem;
+			cursor: pointer;
+			.hotel-cover {
+				display: inline-block;
+				width: 100%;
+				background-color: $blue;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 10rem;
+
+			}
+			.info {
+				padding: 1rem 2rem;
+				text-align: center;
+				background-color: $blue;
+				overflow: hidden;
+				color: $white;
+				transition: all .5s ease-out;
+				&:hover {
+					background-color: #2980b9;
+				}
+				.title {
+					font-size: 1.4rem;
+					font-weight: 700;
+					margin: 0;
+				}
+				.stars {
+					color: #f1c40f;
+					margin: 0px 0 1rem 0;
+				}
+				.location {
+					padding-top: 1rem;
+				}
+			}
 		}
 	}
 }

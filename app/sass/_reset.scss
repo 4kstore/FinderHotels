@@ -42,3 +42,15 @@ table {
 *:focus {
     outline: none;
 }
+input::-webkit-input-placeholder {
+  color: #bdc3c7;
+}
+input::-moz-placeholder {
+  color: #bdc3c7;
+}
+input:-ms-input-placeholder {
+  color: #bdc3c7;
+}
+input:-moz-placeholder {
+  color: #bdc3c7;
+}
